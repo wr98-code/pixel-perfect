@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AppLayout from "@/components/layout/AppLayout";
 import Dashboard from "@/pages/Dashboard";
 import Markets from "@/pages/Markets";
+import Terminal from "@/pages/Terminal";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -20,6 +21,7 @@ const App = () => (
           <Routes>
             <Route path="/" element={<Dashboard />} />
             <Route path="/markets" element={<Markets />} />
+            <Route path="/terminal" element={<Terminal />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </AppLayout>
